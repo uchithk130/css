@@ -1,0 +1,345 @@
+Table :
+
+/* General table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+/* Table header styles */
+thead th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  padding: 12px 15px;
+}
+
+/* Table row styles */
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Table cell styles */
+td {
+  padding: 12px 15px;
+  border-right: 1px solid #ddd;
+}
+
+/* Remove border from the last cell */
+td:last-child {
+  border-right: none;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  table {
+    border: 0;
+  }
+  table thead {
+    display: none;
+  }
+  table tr {
+    display: block;
+    margin-bottom: 20px;
+  }
+  table td {
+    display: block;
+    text-align: right;
+    border-bottom: 1px solid #ddd;
+  }
+  table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    text-transform: uppercase;
+    float: left;
+    text-align: left;
+  }
+  td:last-child {
+    border-bottom: 0;
+  }
+}
+
+
+Navbar :
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar links hover effect */
+.navbar a:hover {
+  background-color: #575757;
+  border-radius: 5px;
+}
+
+/* Logo or brand name */
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Navbar menu */
+.navbar .menu {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0;
+  }
+
+  .navbar .menu a {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: left;
+  }
+}
+
+
+TODO :
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container */
+.todo-container {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* Input field and add button */
+input[type='text'] {
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* To-do list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Checkbox and task styling */
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Remove button */
+li button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+li button:hover {
+  background-color: #b02a37;
+}
+
+
+LOGIN :
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Form container */
+form {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form inputs */
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Sign-up link */
+p {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
